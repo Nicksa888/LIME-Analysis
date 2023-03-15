@@ -210,7 +210,8 @@ DataExplorer::plot_qq(Chile_RC)
 
 # It is important to use stratified sampling. This technique consists of forcing the distribution of the target variable(s) among the different splits to be the 
 # same. Otherwise, there is an imbalance in the data, which may interfere with how the algorithm generates predictions, as it will favour the class of the target 
-# variable with the highest count. Stratified sampling can be carried out with the createDataPartition function in the caret package. We create a slit of 75% for training data and 25% for test data. We specify we don't want a list using the list = False() parameter
+# variable with the highest count. Stratified sampling can be carried out with the createDataPartition function in the caret package. We create a slit of 75% for
+# training data and 25% for test data. We specify we don't want a list using the list = False() parameter
 
 set.seed(123)
 Chile_DP <- createDataPartition(y = Chile_RC$Lethal, p = .75, list = F)
